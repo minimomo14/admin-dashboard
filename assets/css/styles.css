@@ -67,13 +67,26 @@ select {
 
 
 /* /sidebar/ */
-.sidebar {
+.sidebar ul {
     border: 2px solid #DBA39A;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100vh;
+}
+
+.sidebar li a {
+    display: block;
 }
 
 /* topnav */
 .topnav {
     border: 2px solid #DBA39A;
+}
+
+.topnav li {
+    
 }
 
 .header {
