@@ -65,6 +65,29 @@ select {
   font: inherit;
 }
 
+
+/* /sidebar/ */
+.sidebar {
+    border: 2px solid #DBA39A
+}
+
+/* top-bar */
+.top-bar {
+    border: 2px solid #DBA39A;
+}
+
+.header {
+    border: 2px solid #DBA39A;
+}
+
+.content-container {
+    border: 2px solid #DBA39A;
+}
+
+.footer {
+    border: 2px solid #DBA39A;
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
