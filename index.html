@@ -1,14 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
     <title>admin-dashboard</title>
 </head>
+
 <body>
-    
+    <div class="light_mode"></div>
+    <div class="sidebar">
+        <!-- //icon -->
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Calender</a></li>
+            <li><a href="#">Messages</a></li>
+            <br> <br>
+            <li><a href="">help</a></li>
+            <li><a href="">Settings</a></li>
+        </ul>
+    </div>
+    <div class="topbar">
+        <ul>
+            <!-- link list -->
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Search...</a></li>
+            <!-- //email icon here -->
+            <li>email icon</li>
+            <!-- notification icon -->
+            <li>notification icon</li>
+            <!-- Profile picture icon -->
+            <li>Profile picture</li>
+        </ul>
+    </div>
+    <header class="header">
+        <div class="greeting_content">
+            <!-- //greeting depend on time client login -->
+            <h1 class="greeting titlt-content">Hello, </h1>
+            <p class="text-content">Your performance is looking good!</p>
+        </div>
+        <div class="current_time">
+            <!-- //show current time -->
+            <p class="text-content">Current time</p>
+        </div>
+    </header>
+    <main class="content_container">
+        <div class="performance_container">
+            <div class="myPerformance">
+                <!-- //showing current scores -->
+                <h3 class="title-content">My Performance</h3>
+                <p class="text-content">Good score</p>
+            </div>
+            <div class="taskAssigned">
+                <h3 class="title-content">Task Assigned</h3>
+                <p class="text-content">186</p>
+            </div>
+            <div class="taskCompletion">
+                <h3 class="title-content">Task Completion</h3>
+                <p class="text-content">98.56%</p>
+            </div>
+            <div class="attendance">
+                <h3 class="title-content">Attendance %</h3>
+                <p class="text-content">89.97%</p>
+            </div>
+        </div>
+
+        <div class="myTeam_container">
+            <div class="myTeam">
+                <h2 class="title-content">My Team</h2>
+                <!-- link list for team performance -->
+                <ul>
+                    <li><a href="">Performance</a></li>
+                    <li><a href="">Goals</a></li>
+                    <li><a href="">Reports</a></li>
+                    <li><a href="">Feedbacks</a></li>
+                </ul>
+                <br>
+                <!-- table goes here : presenting team members performance scores -->
+            </div>
+            <div class="performance_comparison">
+                <h2 class="title-content">Performance comparison</h2>
+                <!-- dropdown menu -->
+                <p>All members</p>
+            </div>
+            <div class="expenses">
+                <h2 class="title-content">Expenses</h2>
+                <ul>
+                    <li>Salary</li>
+                    <li>Bonuses</li>
+                    <li>Entertainment</li>
+                    <li>Claims</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"> 2023 Still working in progress, LLC. All rights reserved.</footer>
+
 
     <script></script>
 </body>
+
 </html>
