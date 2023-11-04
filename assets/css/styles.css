@@ -68,11 +68,11 @@ select {
 
 /* /sidebar/ */
 .sidebar {
-    border: 2px solid #DBA39A
+    border: 2px solid #DBA39A;
 }
 
-/* top-bar */
-.top-bar {
+/* topnav */
+.topnav {
     border: 2px solid #DBA39A;
 }
 
