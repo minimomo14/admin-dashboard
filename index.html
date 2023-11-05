@@ -1,148 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>admin-dashboard</title>
-  </head>
+</head>
 
-  <body>
-    <div class="sidebar">
-      <ul>
-        <!-- //icon -->
-        <button class="light_mode">
-          <!-- //icon to switch mode -->
-          <p>Light/Dark</p>
-        </button>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Calender</a></li>
-        <li><a href="#">Messages</a></li>
-        <br />
-        <br />
-        <li><a href="">help</a></li>
-        <li><a href="">Settings</a></li>
-      </ul>
-    </div>
+<body>
     <div class="topnav">
-      <ul>
-        <!-- link list -->
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Performance</a></li>
-        <li><a href="#">Search...</a></li>
-        <!-- //email icon here -->
-        <li>email icon</li>
-        <!-- notification icon -->
-        <li>notification icon</li>
-        <!-- Profile picture icon -->
-        <li>Profile picture</li>
-      </ul>
+        <ul>
+            <!-- link list -->
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Search...</a></li>
+            <!-- //email icon here -->
+            <li><a href="#">email icon</a></li>
+            <!-- notification icon -->
+            <li><a href="#">notification icon</a></li>
+            <!-- Profile picture icon -->
+            <li><a href="#">
+                <img src="" alt="chip image" class="chip">
+                User Image</a></li>
+        </ul>
     </div>
+    <div class="sidebar">
+        <ul>
+            <!-- //icon -->
+            <button class="light_mode">
+                <!-- //icon to switch mode -->
+                <p>Light/Dark</p>
+            </button>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Calender</a></li>
+            <li><a href="#">Messages</a></li>
+            <br />
+            <br />
+            <li><a href="">help</a></li>
+            <li><a href="">Settings</a></li>
+        </ul>
+         </div>
 
-    <header class="header">
-      <div class="greeting_content card">
-        <!-- //greeting depend on time client login -->
-        <h1 class="greeting titlt-content">Hello,</h1>
-        <p class="text-content">Your performance is looking good!</p>
-      </div>
-      <div class="current_time card">
-        <!-- //show current time -->
-        <p class="text-content">Current time:</p>
-      </div>
-    </header>
+    <main class="main-content">
+        <header>
+            <div class="header-content">
+                <div class="greeting_content card">
+                    <!-- //greeting depend on time client login -->
+                    <h1 class="greeting_title" id="greeting_title">
+                        <div id="hourNow"></div>
+                        <div id="user_name"></div>
+                    </h1>
+                    <p class="text-content">Your performance is looking good!</p>
+                </div>
+                <div class="current_time card">
+                    <!-- //show current time -->
+                    <p class="text-content">Current time:</p>
+                </div>
+            </div>
+        </header>
 
-    <main class="content-container">
-      <div class="performance_container">
-        <div class="myPerformance">
-          <!-- //showing current scores -->
-          <h3 class="title-content">My Performance</h3>
-          <p class="text-content">Good score</p>
-        </div>
-        <div class="taskAssigned">
-          <h3 class="title-content">Task Assigned</h3>
-          <p class="text-content">186</p>
-        </div>
-        <div class="taskCompletion">
-          <h3 class="title-content">Task Completion</h3>
-          <p class="text-content">98.56%</p>
-        </div>
-        <div class="attendance">
-          <h3 class="title-content">Attendance %</h3>
-          <p class="text-content">89.97%</p>
-        </div>
-      </div>
+        <div class="content-container">
+            <div class="performance_container">
+                <div class="myPerformance">
+                    <!-- //showing current scores -->
+                    <h3 class="title-content">My Performance</h3>
+                    <p class="text-content">Good score</p>
+                </div>
+                <div class="taskAssigned">
+                    <h3 class="title-content">Task Assigned</h3>
+                    <p class="text-content">186</p>
+                </div>
+                <div class="taskCompletion">
+                    <h3 class="title-content">Task Completion</h3>
+                    <p class="text-content">98.56%</p>
+                </div>
+                <div class="attendance">
+                    <h3 class="title-content">Attendance %</h3>
+                    <p class="text-content">89.97%</p>
+                </div>
+            </div>
 
-      <div class="myTeam-container card">
-        <div class="myTeam">
-          <h2 class="title-content">My Team</h2>
-          <!-- link list for team performance -->
-          <ul>
-            <li><a href="">Performance</a></li>
-            <li><a href="">Goals</a></li>
-            <li><a href="">Reports</a></li>
-            <li><a href="">Feedbacks</a></li>
-          </ul>
-          <br />
-          <table class="table-content">
-             <!-- table goes here : presenting team members performance scores -->
-            <tr>
-                <th>Team members</th>
-                <th>Score</th>
-                <th>This month</th>
-                <th>Last month</th>
-            </tr>
-            <tr>
-                <td>Lorem, ipsum dolor.</td>
-                <td>201</td>
-                <td>83.43%</td>
-                <td>85%</td>
-            </tr>
-            <tr>
-                <td>Lorem, ipsum.</td>
-                <td>223</td>
-                <td>83.43%</td>
-                <td>85%</td>
-            </tr>
-            <tr>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>217</td>
-                <td>83.43%</td>
-                <td>85%</td>
-            </tr>
-            <tr>
-                <td>Lorem, ipsum dolor.</td>
-                <td>180</td>
-                <td>83.43%</td>
-                <td>85%</td>
-            </tr>
-            <tr>
-                <td>Lorem, ipsum dolor.</td>
-                <td>180</td>
-                <td>83.43%</td>
-                <td>85%</td>
-            </tr>
-            </table>
+            <div class="myTeam-container card">
+                <div class="myTeam">
+                    <h2 class="title-content">My Team</h2>
+                    <!-- link list for team performance -->
+                    <ul>
+                        <li><a href="">Performance</a></li>
+                        <li><a href="">Goals</a></li>
+                        <li><a href="">Reports</a></li>
+                        <li><a href="">Feedbacks</a></li>
+                    </ul>
+                    <br />
+                    <table class="table-content">
+                        <!-- table goes here : presenting team members performance scores -->
+                        <tr>
+                            <th>Team members</th>
+                            <th>Score</th>
+                            <th>This month</th>
+                            <th>Last month</th>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>201</td>
+                            <td>83.43%</td>
+                            <td>85%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum.</td>
+                            <td>223</td>
+                            <td>83.43%</td>
+                            <td>85%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td>217</td>
+                            <td>83.43%</td>
+                            <td>85%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>180</td>
+                            <td>83.43%</td>
+                            <td>85%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>180</td>
+                            <td>83.43%</td>
+                            <td>85%</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="performance_comparison">
+                    <h2 class="title-content">Performance comparison</h2>
+                    <!-- dropdown menu -->
+                    <p>All members</p>
+                </div>
+                <div class="expenses">
+                    <h2 class="title-content">Expenses</h2>
+                    <ul>
+                        <li>Salary</li>
+                        <li>Bonuses</li>
+                        <li>Entertainment</li>
+                        <li>Claims</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="performance_comparison">
-          <h2 class="title-content">Performance comparison</h2>
-          <!-- dropdown menu -->
-          <p>All members</p>
-        </div>
-        <div class="expenses">
-          <h2 class="title-content">Expenses</h2>
-          <ul>
-            <li>Salary</li>
-            <li>Bonuses</li>
-            <li>Entertainment</li>
-            <li>Claims</li>
-          </ul>
-        </div>
-      </div>
+
     </main>
+
     <footer class="footer">
-      2023 Still working in progress, LLC. All rights reserved.
+        2023 Still working in progress, LLC. All rights reserved.
     </footer>
 
     <script src="./assets/js/script.js"></script>
-  </body>
+</body>
+
 </html>
