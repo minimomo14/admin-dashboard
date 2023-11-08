@@ -65,6 +65,14 @@ select {
   font: inherit;
 }
 
+/* /== style grid ==/ */
+.grid {
+    display: grid;
+    grid-template-rows: 80px auto 80px;
+    grid-template-columns: 20% auto 20%;
+    height: 100vh;
+}
+
 /* //sidebar 20% and content 80% */
 .main-content {
     display: flex;
@@ -89,7 +97,7 @@ select {
     display: block;
 }
 
-/* topnav */
+/* navbar */
 .chip {
     display: inline-block;
     padding: 0 25px;
@@ -108,23 +116,23 @@ select {
     border-radius: 50%;
 }
 
-.topnav {
+.navbar {
     border: 2px solid #DBA39A;
     text-decoration: none;
 }
 
-.topnav ul {
+.navbar ul {
   background-color: var(--secondaryClr);
   color:black;
   overflow: hidden;
 }
 
-.topnav li {
+.navbar li {
     float: left;
    
 }
 
-.topnav li a {
+.navbar li a {
     display: block;
     color: var(--neutralClr2);
     text-align: center;
@@ -132,7 +140,7 @@ select {
     text-decoration: none;
 }
 
-.topnav li a:hover {
+.navbar li a:hover {
     background-color: var(--primaryClr);
 }
 
@@ -163,6 +171,7 @@ select {
     align-items: center;
 }
 
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -177,4 +186,16 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-rows: 80px 80px auto 80px 80px;
+        grid-template-columns: 1fr;
+    }
+    /* aside, */
+    main {
+        grid-column: 1/4;
+    }
+
 }

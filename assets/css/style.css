@@ -1,0 +1,62 @@
+:root {
+    --primaryClr: #DBA39A;
+    --secondaryClr: #F0DBDB;
+    --neutralClr1: #F5EBE0;
+    --neutralClr2: #FEFCF3;
+}
+
+/* ... (Your previous CSS) ... */
+
+/* Use Grid Layout for Main Content */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Sidebar takes 1/4, Content takes 3/4 of the space */
+    gap: 16px; /* Add some spacing between columns */
+    height: 100%;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    border: 2px solid #DBA39A;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Adjust alignment */
+    justify-content: flex-start; /* Adjust alignment */
+}
+
+.sidebar ul {
+    border: 2px solid #DBA39A;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Navbar Styles */
+.navbar {
+    border: 2px solid #DBA39A;
+    background-color: var(--secondaryClr);
+}
+
+/* Content Container Styles */
+.content-container {
+    border: 2px solid #DBA39A;
+    padding: 16px; /* Add some padding for better spacing */
+}
+
+/* Performance Container Styles */
+.performance_container {
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 16px; /* Add spacing between items */
+}
+
+/* Footer Styles */
+.footer {
+    border: 2px solid #DBA39A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
